@@ -1,51 +1,54 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 section{
     width: 100%;
-    height: auto;
-    background-color: aquamarine;
+    height: auto;    
 }
 .section{
     width: 1300px;
     height: auto;
     margin: auto;
-    background-color: aqua;
-    
-    display: flex;
-    flex-direction: row;
+    box-sizing: border-box;
 }
-/*CODIGO DEL PERFIL IZQUIERDO*/
-.perfilIzquierdo{
+/*------------------------------------------------------*/
+.cajaIzquierda{
     width: 500px;
-    height: 600px;
-    background-color: beige;
-    padding-top: 50px; 
+    height: 700px;
+    
+    float: left;
+    box-sizing: border-box;
 }
 .imagenPerfil{
     display: block;
-    width: 80%;
+    width: 70%;
     margin: auto;
     border-radius: 100%;
+    margin-top: 50px;
+    -webkit-box-shadow: 1px 10px 40px -6px rgba(125,125,125,1);
+    -moz-box-shadow: 1px 10px 40px -6px rgba(125,125,125,1);
+    box-shadow: 1px 10px 40px -6px rgba(125,125,125,1);
 }
 .Nombre{
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .alias{
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
 }
-/*CODIGO DEL PERFIL DERECHO*/
-.perfilDerecho{
-    width: 100%;
-    height: 600px;
-    background-color: chocolate;
-    
+
+/*-----------------------------------------------------*/
+.cajaDerecha{
+    width: 800px;
+    height: 700px;
+    float: left;
+    box-sizing: border-box;
 }
 .botones{
     width: 100%;
@@ -53,12 +56,42 @@ section{
 }
 .navBotones{
     list-style: none;
-    
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
 }
 .navBotones li{
-    margin-right: 20px;
-    font-size: 20px;
-    
+    margin-right: 0px;
+    font-size: 20px; 
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.navBotones li:hover{
+    transition: 0.2s;
+    border-bottom: 2px solid darkgreen;
+}
+.contenidoDestacado{
+    display: none;
+    width: 100%;
+    height: 500px;
+    background-color: lightseagreen;
+    margin-top: 20px;
+}
+.contenidoProyectos{
+    display: none;
+    width: 100%;
+    height: 500px;
+    background-color: forestgreen;
+    margin-top: 20px;
+}
+.contenidoBiografia{
+    display: none;
+    width: 100%;
+    height: 500px;
+    background-color: darkseagreen;
+    margin-top: 20px;
+}
+.activar{
+    display: block;
+    height: 500px;
 }
